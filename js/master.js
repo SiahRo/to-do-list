@@ -4,11 +4,16 @@ var list = $("#list-items");
 
 $("#addButton").click(function() {
   if (inputBox.val() !="" ) {
-    $(list).append('<li class="list-item"><input class="list-check" type="checkbox"></input>'+ inputBox.val() + '</li>');
-    inputBox.val("");
 
-    $("li").on("click", ".list-check", function() {
+    var checkBox = $("<input/>", {type:"checkbox"})
+    var newListItem = $("<li/>", {class:"list-item", text: inputBox.val()});
+    list.append(newListItem);
+    inputBox.val("");
+    newListItem.prepend(checkBox);
+
+    checkBox.on("click", function() {
       $(this).parent().remove();
+
     });
   }
 });
