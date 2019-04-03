@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
 
     <div class="form">
     <h1>To Do List...</h1>
+    <hr></hr>
 
      <input id="text-box" type="text" placeholder="Enter To Do Item..." value="">
      <button type="button" id="addButton">Add Item</button>
-
+    <hr></hr>
      <ul id="list-items">
      </ul>
      </div>
 
-     <div class="alert">
-       <span class="toast"></span>
+     <div id="toast">
+       <span class="toast">Task completed successfully</span>
      </div>
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

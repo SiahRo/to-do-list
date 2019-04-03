@@ -13,7 +13,10 @@ $("#addButton").click(function() {
 
     checkBox.on("click", function() {
       $(this).parent().remove();
-        alert("task completed!");
+      $("#toast").css("display", "block");
+      setTimeout(function(){
+        $("#toast").hide();
+      }, 5000);
 
     });
   }

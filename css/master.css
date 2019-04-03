@@ -1,9 +1,15 @@
 body {
+
+  background-color: black;
+  position: relative;
   font-family: sans-serif;
   padding: 5%;
 }
 
 .form {
+  font-family: 'shadows into light', cursive;
+  border-radius: 5px;
+  background-color: beige;
   text-align: center;
   border: 1px solid black;
   padding: 1em;
@@ -23,12 +29,17 @@ ul li {
 }
 
 #toast {
+  position: absolute;
+  top: 0;
+  left: 80%;
   display: none;
-  height: 30px;
-  width: 50px;
-  background-color: green;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  background-color: lightgreen;
   color: white;
   font-size: 12px;
   text-align: center;
+  padding-top: 20px;
   font-weight: bold;
 }
