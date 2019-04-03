@@ -14,8 +14,10 @@ $("#addButton").click(function() {
     newListItem.append(line);
 
     checkBox.on("click", function() {
-      $(this).parent().remove();
+
       $("#toast").css("display", "block");
+      $("#toast").text("Task completed!");
+      $(this).parent().remove();
       setTimeout(function(){
         $("#toast").hide();
       }, 3000);
