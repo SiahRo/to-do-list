@@ -21,3 +21,14 @@ ul li {
   text-align: center;
   margin-right: 20px;
 }
+
+#toast {
+  display: none;
+  height: 30px;
+  width: 50px;
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}

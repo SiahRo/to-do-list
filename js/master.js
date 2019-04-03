@@ -13,6 +13,7 @@ $("#addButton").click(function() {
 
     checkBox.on("click", function() {
       $(this).parent().remove();
+        alert("task completed!");
 
     });
   }
